@@ -55,7 +55,19 @@ img {
   justify-content: space-between;
   width: min(var(--max), calc(100% - 32px));
   margin: 0 auto;
-  padding: 18px 0;
+  padding: 12px 0;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc((min(var(--max), calc(100vw - 32px)) - 100vw) / 2);
+  bottom: 0;
+  left: calc((min(var(--max), calc(100vw - 32px)) - 100vw) / 2);
+  z-index: -1;
+  border-bottom: 1px solid rgba(213, 173, 105, 0.12);
+  background: rgba(5, 6, 7, 0.72);
   backdrop-filter: blur(18px);
 }
 
@@ -64,6 +76,7 @@ img {
   align-items: center;
   gap: 12px;
   min-height: 48px;
+  min-width: 0;
 }
 
 .brand span {
@@ -776,14 +789,21 @@ input:focus {
 
 @media (max-width: 640px) {
   .site-header {
-    position: static;
-    display: block;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    gap: 14px;
   }
 
   .site-header nav {
-    justify-content: flex-start;
-    gap: 14px;
-    margin-top: 14px;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  .brand strong {
+    display: none;
   }
 
   .hero {
