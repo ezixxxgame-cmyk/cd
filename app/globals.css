@@ -171,6 +171,10 @@ h3 {
   color: var(--muted);
 }
 
+.brand-note {
+  font-size: 14px;
+}
+
 .hero-text {
   margin: 24px 0 0;
   font-size: 18px;
