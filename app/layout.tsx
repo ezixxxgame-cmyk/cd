@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true
   },
+  verification: {
+    google: "IfbGDMTWkvt_pMBtDd2sjDEHrjJvNuSywWgLBNWljos"
+  },
   keywords: [
     "детейлинг Уфа",
     "выездной детейлинг",
