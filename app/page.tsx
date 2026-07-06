@@ -204,10 +204,15 @@ export default function Home() {
                 <h3>{service.name}</h3>
                 <p>{service.description}</p>
               </div>
-              <strong>
-                {service.prefix}
-                {formatPrice(service.price)}
-              </strong>
+              <div className="price-value">
+                <strong>
+                  {service.prefix}
+                  {formatPrice(service.price)}
+                </strong>
+                {service.id === "base" ? (
+                  <small>Скидка 25% на первый визит</small>
+                ) : null}
+              </div>
             </article>
           ))}
         </div>

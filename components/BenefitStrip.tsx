@@ -5,7 +5,7 @@ type Benefit = {
 
 const benefits: Benefit[] = [
   { icon: "car", text: "Выезд по Уфе и пригороде" },
-  { icon: "flask", text: "Профессиональная химия и оборудование detail" },
+  { icon: "flask", text: "Профессиональная химия detail и качественное оборудование" },
   { icon: "clock", text: "Экономия времени без поездки в центр" },
   { icon: "hundred", text: "Внимание к кузову, салону, колесам и трудным зонам" }
 ];

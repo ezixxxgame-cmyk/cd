@@ -392,12 +392,26 @@ h3 {
   color: var(--muted);
 }
 
-.price-row strong {
+.price-value {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.price-value strong {
   color: var(--gold);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 400;
   white-space: nowrap;
+}
+
+.price-value small {
+  max-width: 190px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.25;
+  text-align: right;
 }
 
 .capability {
@@ -843,6 +857,14 @@ input:focus {
   .service-option,
   .form-footer {
     grid-template-columns: 1fr;
+  }
+
+  .price-value {
+    justify-items: start;
+  }
+
+  .price-value small {
+    text-align: left;
   }
 
   .form-footer {
