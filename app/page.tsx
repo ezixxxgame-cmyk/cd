@@ -115,7 +115,15 @@ export default function Home() {
       />
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Сокольников Детейлинг">
-          <span>SD</span>
+          <span>
+            <Image
+              src="/images/brand-logo.png"
+              alt=""
+              width={56}
+              height={56}
+              priority
+            />
+          </span>
           <strong>Сокольников Детейлинг</strong>
         </a>
         <nav aria-label="Навигация">
