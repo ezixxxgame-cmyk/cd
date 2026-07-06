@@ -210,7 +210,7 @@ export default function Home() {
                   {formatPrice(service.price)}
                 </strong>
                 {service.id === "base" ? (
-                  <small>Скидка 25% на первый визит</small>
+                  <small>Скидка 25% на первый визит. 5.000-25%=3.750р</small>
                 ) : null}
               </div>
             </article>
