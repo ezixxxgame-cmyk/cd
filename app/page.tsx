@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { BenefitStrip } from "@/components/BenefitStrip";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { BookingForm } from "@/components/BookingForm";
@@ -8,6 +7,7 @@ import { getSiteUrl } from "@/lib/site";
 const phoneDisplay = "8 999 764-24-44";
 const phoneHref = "tel:+79997642444";
 const siteUrl = getSiteUrl();
+const assetUrl = "https://sokolnikovufa.vercel.app";
 const brandAliases = [
   "Соколов детейлинг",
   "Соколов детейл",
@@ -71,7 +71,7 @@ const structuredData = [
     name: "Сокольников Детейлинг",
     alternateName: brandAliases,
     url: siteUrl,
-    image: `${siteUrl}/images/before-after-car.webp`,
+    image: `${assetUrl}/images/before-after-car.webp`,
     telephone: "+79997642444",
     priceRange: "от 5 000 ₽",
     address: {
@@ -127,12 +127,11 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Сокольников Детейлинг">
           <span>
-            <Image
-              src="/images/brand-logo.webp"
+            <img
+              src={`${assetUrl}/images/brand-logo.webp`}
               alt=""
               width={56}
               height={56}
-              priority
             />
           </span>
           <strong>Сокольников Детейлинг</strong>
@@ -168,12 +167,9 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-label="Черный автомобиль после детейлинга">
-          <Image
-            src="/images/hero-black-car.webp"
+          <img
+            src={`${assetUrl}/images/hero-black-car.webp`}
             alt="Черный автомобиль для премиального выездного детейлинга в Уфе"
-            fill
-            priority
-            sizes="(max-width: 900px) 100vw, 58vw"
           />
         </div>
       </section>

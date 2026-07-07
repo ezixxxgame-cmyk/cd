@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Мобильный детейлинг у дома, офиса или в удобном месте. Уфа и пригород.",
     url: "/",
     siteName: "Сокольников Детейлинг",
-    images: ["/images/before-after-car.webp"],
+    images: ["https://sokolnikovufa.vercel.app/images/before-after-car.webp"],
     type: "website",
     locale: "ru_RU"
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Детейлинг Уфа | Выездной детейлинг авто",
     description: "Аккуратный уход за автомобилем с выездом по Уфе и пригороде.",
-    images: ["/images/before-after-car.webp"]
+    images: ["https://sokolnikovufa.vercel.app/images/before-after-car.webp"]
   },
   robots: {
     index: true,
