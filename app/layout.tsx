@@ -3,6 +3,7 @@ import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const siteUrl = getSiteUrl();
+const assetUrl = "https://sokolnikovufa.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -30,6 +31,26 @@ export const metadata: Metadata = {
     title: "Детейлинг Уфа | Выездной детейлинг авто",
     description: "Аккуратный уход за автомобилем с выездом по Уфе и пригороде.",
     images: ["https://sokolnikovufa.vercel.app/images/before-after-car.webp"]
+  },
+  icons: {
+    icon: [
+      {
+        url: `${assetUrl}/favicon.ico`,
+        sizes: "any"
+      },
+      {
+        url: `${assetUrl}/icon.png`,
+        type: "image/png",
+        sizes: "640x640"
+      }
+    ],
+    apple: [
+      {
+        url: `${assetUrl}/icon.png`,
+        type: "image/png",
+        sizes: "640x640"
+      }
+    ]
   },
   robots: {
     index: true,
