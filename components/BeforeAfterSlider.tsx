@@ -8,10 +8,10 @@ export function BeforeAfterSlider() {
   return (
     <div className="compare" style={{ "--split": `${value}%` } as React.CSSProperties}>
       <div className="compare-layer compare-clean" aria-hidden="true">
-        <img src="/images/car-clean-aligned.png" alt="" />
+        <img src="/images/car-clean-aligned.webp" alt="" />
       </div>
       <div className="compare-layer compare-dirty" aria-hidden="true">
-        <img src="/images/car-dirty.png" alt="" />
+        <img src="/images/car-dirty.webp" alt="" />
       </div>
       <div className="compare-divider" aria-hidden="true">
         <span />

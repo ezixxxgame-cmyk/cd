@@ -71,7 +71,7 @@ const structuredData = [
     name: "Сокольников Детейлинг",
     alternateName: brandAliases,
     url: siteUrl,
-    image: `${siteUrl}/images/before-after-car.png`,
+    image: `${siteUrl}/images/before-after-car.webp`,
     telephone: "+79997642444",
     priceRange: "от 5 000 ₽",
     address: {
@@ -128,7 +128,7 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="Сокольников Детейлинг">
           <span>
             <Image
-              src="/images/brand-logo.png"
+              src="/images/brand-logo.webp"
               alt=""
               width={56}
               height={56}
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Черный автомобиль после детейлинга">
           <Image
-            src="/images/hero-black-car.png"
+            src="/images/hero-black-car.webp"
             alt="Черный автомобиль для премиального выездного детейлинга в Уфе"
             fill
             priority
