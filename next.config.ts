@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  assetPrefix: "https://sokolnikovufa.vercel.app",
   images: {
     formats: ["image/avif", "image/webp"]
   },
@@ -18,7 +19,8 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
-        source: "/:path*",
+        source:
+          "/((?!_next/static|_next/image|images|favicon.ico|icon.png).*)",
         has: [
           {
             type: "host",
