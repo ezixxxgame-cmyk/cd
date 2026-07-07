@@ -2,18 +2,16 @@
 
 import { useState } from "react";
 
-const assetUrl = "https://sokolnikovufa.vercel.app";
-
 export function BeforeAfterSlider() {
   const [value, setValue] = useState(52);
 
   return (
     <div className="compare" style={{ "--split": `${value}%` } as React.CSSProperties}>
       <div className="compare-layer compare-clean" aria-hidden="true">
-        <img src={`${assetUrl}/images/car-clean-aligned.webp`} alt="" />
+        <img src="/images/car-clean-aligned.webp" alt="" />
       </div>
       <div className="compare-layer compare-dirty" aria-hidden="true">
-        <img src={`${assetUrl}/images/car-dirty.webp`} alt="" />
+        <img src="/images/car-dirty.webp" alt="" />
       </div>
       <div className="compare-divider" aria-hidden="true">
         <span />

@@ -3,7 +3,6 @@ import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const siteUrl = getSiteUrl();
-const assetUrl = "https://sokolnikovufa.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
       "Мобильный детейлинг у дома, офиса или в удобном месте. Уфа и пригород.",
     url: "/",
     siteName: "Сокольников Детейлинг",
-    images: ["https://sokolnikovufa.vercel.app/images/before-after-car.webp"],
+    images: ["/images/before-after-car.webp"],
     type: "website",
     locale: "ru_RU"
   },
@@ -30,23 +29,23 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Детейлинг Уфа | Выездной детейлинг авто",
     description: "Аккуратный уход за автомобилем с выездом по Уфе и пригороде.",
-    images: ["https://sokolnikovufa.vercel.app/images/before-after-car.webp"]
+    images: ["/images/before-after-car.webp"]
   },
   icons: {
     icon: [
       {
-        url: `${assetUrl}/favicon.ico`,
+        url: "/favicon.ico",
         sizes: "any"
       },
       {
-        url: `${assetUrl}/icon.png`,
+        url: "/icon.png",
         type: "image/png",
         sizes: "640x640"
       }
     ],
     apple: [
       {
-        url: `${assetUrl}/icon.png`,
+        url: "/icon.png",
         type: "image/png",
         sizes: "640x640"
       }

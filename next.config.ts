@@ -1,9 +1,45 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  assetPrefix: "https://sokolnikovufa.vercel.app",
   images: {
     formats: ["image/avif", "image/webp"]
+  },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.sokolnikovufa.ru"
+          }
+        ],
+        destination: "https://sokolnikovufa.ru/:path*",
+        permanent: true
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "sokolnikovufa.vercel.app"
+          }
+        ],
+        destination: "https://sokolnikovufa.ru/:path*",
+        permanent: true
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "cd-wa1dx.vercel.app"
+          }
+        ],
+        destination: "https://sokolnikovufa.ru/:path*",
+        permanent: true
+      }
+    ];
   },
   async headers() {
     return [

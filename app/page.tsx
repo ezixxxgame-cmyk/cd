@@ -7,7 +7,6 @@ import { getSiteUrl } from "@/lib/site";
 const phoneDisplay = "8 999 764-24-44";
 const phoneHref = "tel:+79997642444";
 const siteUrl = getSiteUrl();
-const assetUrl = "https://sokolnikovufa.vercel.app";
 const brandAliases = [
   "Соколов детейлинг",
   "Соколов детейл",
@@ -71,7 +70,7 @@ const structuredData = [
     name: "Сокольников Детейлинг",
     alternateName: brandAliases,
     url: siteUrl,
-    image: `${assetUrl}/images/before-after-car.webp`,
+    image: `${siteUrl}/images/before-after-car.webp`,
     telephone: "+79997642444",
     priceRange: "от 5 000 ₽",
     address: {
@@ -128,7 +127,7 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="Сокольников Детейлинг">
           <span>
             <img
-              src={`${assetUrl}/images/brand-logo.webp`}
+              src="/images/brand-logo.webp"
               alt=""
               width={56}
               height={56}
@@ -168,7 +167,7 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Черный автомобиль после детейлинга">
           <img
-            src={`${assetUrl}/images/hero-black-car.webp`}
+            src="/images/hero-black-car.webp"
             alt="Черный автомобиль для премиального выездного детейлинга в Уфе"
           />
         </div>
