@@ -11,10 +11,10 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: "host",
-            value: "www.sokolnikovufa.ru"
+            value: "sokolnikovufa.ru"
           }
         ],
-        destination: "https://sokolnikovufa.ru/:path*",
+        destination: "https://www.sokolnikovufa.ru/:path*",
         permanent: true
       },
       {
@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
             value: "sokolnikovufa.vercel.app"
           }
         ],
-        destination: "https://sokolnikovufa.ru/:path*",
+        destination: "https://www.sokolnikovufa.ru/:path*",
         permanent: true
       },
       {
@@ -36,7 +36,7 @@ const nextConfig: NextConfig = {
             value: "cd-wa1dx.vercel.app"
           }
         ],
-        destination: "https://sokolnikovufa.ru/:path*",
+        destination: "https://www.sokolnikovufa.ru/:path*",
         permanent: true
       }
     ];
