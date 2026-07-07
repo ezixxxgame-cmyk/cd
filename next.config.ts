@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  assetPrefix: "https://sokolnikovufa.vercel.app",
   images: {
     formats: ["image/avif", "image/webp"]
   },
