@@ -29,17 +29,6 @@ const nextConfig: NextConfig = {
         ],
         destination: "https://www.sokolnikovufa.ru/:path*",
         permanent: true
-      },
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "cd-wa1dx.vercel.app"
-          }
-        ],
-        destination: "https://www.sokolnikovufa.ru/:path*",
-        permanent: true
       }
     ];
   },
